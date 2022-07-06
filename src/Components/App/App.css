@@ -1,0 +1,134 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #121212;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* header */
+.game-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 15vh;
+  width: 100%;
+  background-color: green;
+  margin-bottom: 3rem;
+}
+.point-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.moves {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+}
+.title {
+  font-size: 5rem;
+  color: gold;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 1rem;
+}
+.moves span {
+  font-weight: 100;
+  color: yellow;
+  letter-spacing: 5px;
+}
+
+/* board syles*/
+.board {
+  user-select: none;
+  background-color: #333;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  position: relative;
+  background: rgb(95, 67, 0);
+  background-image: url(../../assets/images/board-bgr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid black;
+  box-shadow: 0 0 2rem black;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+.tile {
+  cursor: pointer;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  transition: all 0.5 ease-in-out;
+  border: 1px solid grey;
+  opacity: 60%;
+  padding: 0.5rem 0 0 0.5rem;
+}
+.field-number {
+  color: tomato;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px white;
+}
+.tile-correct {
+  opacity: 100%;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px black;
+}
+
+/* modal when game is finished */
+.overlay {
+  background: gold;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 80%;
+}
+.modal-reset {
+  top: 215px;
+  left: 120px;
+  position: absolute;
+}
+.modal-reset h1 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* play again */
+.restart-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.play-again {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: black;
+  background-color: green;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+.play-again:hover {
+  background-color: green;
+  filter: brightness(80%);
+  cursor: pointer;
+}
